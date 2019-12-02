@@ -6,7 +6,7 @@ val v2_13 = "2.12.9"
 lazy val commonSettings = commonSmlBuildSettings ++ Seq(
   scalaVersion := v2_13,
   scalafmtOnCompile := true,
-  libraryDependencies ++= Seq(compilerPlugin("com.softwaremill.neme" %% "neme-plugin" % "0.0.15-SNAPSHOT"))
+  libraryDependencies ++= Seq(compilerPlugin("com.softwaremill.neme" %% "neme-plugin" % "0.0.5"))
 )
 
 lazy val rootProject = (project in file("."))
